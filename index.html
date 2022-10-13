@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1{
+            margin-top: 1em;
+        }
+        nav{
+            margin: 0;
+            height: 10vh;
+            width: 100%;
+            position: absolute;
+            top: 0rem;
+            background-color: rgb(121, 85, 179);
+            color: black;
+            text-align: center;
+           
+        }
+        .txtareainput{
+            margin: 20px;
+            position: relative;           
+            top: 4rem;
+            left: 8rem;
+
+        }
+        #output{
+            position: relative; 
+            margin: 20px;
+            border: 2px solid black;
+            top: -5rem;
+            left: 8rem;
+            height: 38vh;
+            width: 67%;
+        }
+        .btn{
+            height: 100px;
+            color: aliceblue;
+            background-color: rgb(255, 255, 112);
+            width: 120px;
+            margin: 20px;
+            position: relative;
+            top: -8rem;
+            left: 66rem;
+            background: url("https://techcrunch.com/wp-content/uploads/2010/10/pirate.jpg"); 
+            background-repeat: no-repeat;
+            background-position: center;
+            max-width: 100%;
+            max-height: 100%;
+            
+        }
+        .p{
+            position: absolute;
+           left: 11rem;
+           top: 16rem;
+}
+body{
+    background-color: rgb(115, 153, 186);
+}
+
+        footer{
+            height: 10vh;
+            width: 100%;
+            position: absolute;
+            left: 0rem;
+          bottom: 0rem;
+            background-color: rgb(95, 62, 77);
+          
+        }
+        .txtareainput{
+            background-color: rgb(37, 83, 123);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Pirate Talks</h1>
+    </nav>
+    <textarea class="txtareainput" rows=10 cols=120 placeholder="Enter Your Text"></textarea><br>
+    <button class="btn">Translate to Pirate Lnaguage🏴‍☠️🦜</button>
+    <p class="p">Your Words in Pirate language</p>
+    <div id="output"></div>
+    <footer><p>This will convert your text into Pirate language</p></footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
